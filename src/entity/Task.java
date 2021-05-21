@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 @Table(name = "task")
 //@Lombok
 public class Task implements Serializable {
+    
     @Id
     @Column(name = "task_id", columnDefinition = "number")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "task_seq")
